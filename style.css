@@ -1,0 +1,83 @@
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  background: #f4f6f8;
+  color: #333;
+  padding: 0%;
+  margin: 0%;
+}
+
+.todo-wrapper {
+  max-width: 600px;
+  background: #fff;
+  border-radius: 16px;
+}
+
+h2 {
+  font-weight: 600;
+}
+
+form input {
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  transition: border-color 0.2s;
+}
+
+form input:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.15rem rgba(13, 110, 253, 0.15);
+}
+
+#ref table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#ref th, #ref td {
+  padding: 10px 8px;
+  vertical-align: middle;
+}
+
+#ref th {
+  background: #0d6efd;
+  color: white;
+  border: none;
+}
+
+#ref td {
+  border-top: 1px solid #eee;
+}
+
+.btn {
+  border-radius: 8px;
+}
+
+button {
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Card layout on small screens */
+@media (max-width: 576px) {
+  #ref table {
+    display: none;
+  }
+  /* .task-card {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 12px 16px;
+    margin-bottom: 12px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  }
+  .task-card h6 {
+    font-size: 1rem;
+    margin: 0;
+    color: #0d6efd;
+  }
+  .task-card small {
+    color: #777;
+  } */
+}
